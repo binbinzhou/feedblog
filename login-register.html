@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>登录-注册</title>
+	<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="logreg-wrap">
+	<div class="container logreg-container">
+		<div class="logreg-header text-center">
+			<h1 class="logreg-title"><i class="cursor">Feed<span>Blog</span></i></h1>
+			<p>Welcome to School FeedBlog by BinBinZhou</p>
+		</div>
+		<div class="row logreg-con">
+			<!-- 用户登录模块开始 -->
+			<div class="col-md-4 col-sm-12 col-md-push-7 login-wrap">
+				<h2 class="text-muted">用户登录</h2>
+				<form action="javascript:void(0);" class="login-form">
+					<div class="form-group has-feedback">
+						<label class="control-label" for="username">用户名</label>
+						<input class="form-control" name="username" required="" placeholder="请输入用户名" type="text">
+						<span class="glyphicon glyphicon-user form-control-feedback"></span>
+					</div>
+					<div class="form-group has-feedback">
+						<label class="control-label" for="password">密码</label>
+						<span class="pull-right"><a class="for-password" href="forgot.html">忘记密码</a></span>
+						<input class="form-control" name="password" required="" placeholder="密码" type="password">
+						<span class="glyphicon glyphicon-eye-close form-control-feedback"></span>
+					</div>
+					<div class="form-group clearfix">
+						<div class="checkbox pull-left">
+							<label>
+								<input name="remember" type="checkbox" checked="">
+								记录登录状态
+							</label>
+						</div>
+						<!-- <input type="submit"  class="btn btn-primary pull-right login-btn" value="登录"> -->
+						<button class="btn btn-primary pull-right login-btn" type="submit">登录</button>
+					</div>
+				</form>
+			</div>
+			<!-- 用户登录模块结束 -->
+			<!-- 分割线 -->
+			<div class="logreg-splitline hidden-sm hidden-xs"></div>
+			<!-- 注册模块开始 -->
+			<div class="col-md-4 col-sm-12 col-md-pull-3 register-wrap">
+				<h2 class="text-muted">注册新账号</h2>
+				<form action="javascript:void(0);" class="register-form">
+					<div class="form-group has-feedback user">
+						<label class="control-label" for="username">用户名</label>
+						<input class="form-control" name="username" placeholder="真实姓名或常用昵称" type="text">
+						<span class="glyphicon glyphicon-user form-control-feedback"></span>
+						<p class="remove"><i class="glyphicon glyphicon-remove-sign"></i> 该用户已被注册</p>
+						<p class="blank"><i class="glyphicon glyphicon-remove-sign"></i> 用户名不能为空</p>
+						<p class="ok"><i class="glyphicon glyphicon-ok-sign"></i> 正确</p>
+					</div>
+					<div class="form-group has-feedback tel">
+						<label class="control-label" for="telephone">手机号</label>
+						<input class="form-control" name="telephone" placeholder="11位手机号" type="tel">
+						<span class="glyphicon glyphicon-phone form-control-feedback"></span>
+						<p class="hasregis"><i class="glyphicon glyphicon-remove-sign"></i> 该电话号码已被注册</p>
+						<p class="remove"><i class="glyphicon glyphicon-remove-sign"></i> 请输入11位数字</p>
+						<p class="ok"><i class="glyphicon glyphicon-ok-sign"></i> 正确</p>
+					</div>
+					<div class="form-group has-feedback passw">
+						<label class="control-label" for="password">密码</label>
+						<input class="form-control" name="password" placeholder="不少于6位" type="password">
+						<span class="glyphicon glyphicon-eye-close form-control-feedback"></span>
+						<p class="remove"><i class="glyphicon glyphicon-remove-sign"></i> 密码不少于6位</p>
+						<p class="ok"><i class="glyphicon glyphicon-ok-sign"></i> 正确</p>
+					</div>
+					<div class="form-group has-feedback password">
+						<label class="control-label" for="passwords">请再次输入密码</label>
+						<input class="form-control" name="passwords" placeholder="不少于6位" type="password">
+						<span class="glyphicon glyphicon-eye-close form-control-feedback"></span>
+						<p class="remove"><i class="glyphicon glyphicon-remove-sign"></i> 请输入相同的密码</p>
+						<p class="ok"><i class="glyphicon glyphicon-ok-sign"></i> 正确</p>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-primary pull-right login-btn" type="submit">注册</button>
+					</div>
+					<!-- 注册失败模态框 -->
+					<div class="modal logresmodal" id="modalfail">
+		        <div class="modal-dialog">
+		            <div class="modal-content">
+									<div class="modal-header">
+									    <span class="close closeBtn">&times;</span>
+									</div>
+									<div class="modal-body">
+										请仔细检查是否填写正确！
+									</div>
+									<div class="modal-footer">
+									    <button class="btn btn-danger closeBtn">关闭</button>
+									</div>
+		            </div>
+		        </div>
+		    	</div>
+				</form>
+			</div>
+			<!-- 注册模块结束 -->
+		</div>
+		<!-- 底部版权信息 -->
+		<div class="copyright text-center">
+			<p>版权所有 © 2016 FeedBlog. 江西理工大学南昌校区</p>
+			<p>信息工程系13级软件开发3班.BinBinZhou</p>
+		</div>
+	</div>
+</div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src='js/database.js'></script>
+<script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>随机头像生成</title>
+</head>
+<body>
+	<img src="" alt="">
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script>
+		var randomNum = Math.round(Math.random()*1000);
+		console.log(randomNum);
+		var imgSrc = 'http://images.nowcoder.com/head/'+randomNum+'t.png';
+		$('img').attr('src',imgSrc);
+
+	</script>
+</body>
+</html>

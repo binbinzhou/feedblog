@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>点赞实例</title>
+	<style>
+		.btn{
+			width: 50px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			background: #919191;
+			color: #fff;
+			border-radius: 3px;
+			border: 1px solid  #ccc;
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+<body>
+	<button class="btn">点赞</button>
+
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script>
+		var arr = []; 
+		$('.btn').off('click').on('click',function(){
+			// debugger
+			arr.push($(this));
+			console.log(arr.length);
+			if(arr.length<=10){
+				//保存进数据库
+			}else if(arr.length>10){
+				//点赞超过10次解绑事件
+				alert('每天点赞数不能超过十次');
+				return false;
+			}
+		});
+	</script>
+</body>
+</html>

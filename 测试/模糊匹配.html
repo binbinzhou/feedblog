@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>模糊匹配</title>
+</head>
+
+<body>
+    <input id="input" type="text" value="" />
+    <input id="search" type="button" onclick="findEach()" value="Search" />
+    <script type="text/javascript">
+    function findEach() {
+        var vData = ["name", "sex", "age", "job", "e-mail"]; //查询字符集
+
+        var sFind = document.getElementById("input").value;
+        if (sFind === "") {
+            alert("Can not be empty.");
+        }
+
+        if (sFind !== "") {
+            var nPos;
+            var vResult = [];
+
+            //for(var i = 0; i <= vData.length; i++){   
+            for (var i in vData) {
+                var sTxt = vData[i] || '';
+                nPos = find(sFind, sTxt);
+                //nPos=sTxt.indexOf(sFind);   
+                if (nPos >= 0) {
+                    vResult[vResult.length] = sTxt;
+                }
+            }
+
+            alert(vResult);
+        }
+    }
+
+    function find(sFind, sObj) {
+        var nSize = sFind.length;
+        var nLen = sObj.length;
+        var sCompare;
+
+        if (nSize <= nLen) {
+            for (var i = 0; i <= nLen - nSize + 1; i++) {
+                sCompare = sObj.substring(i, i + nSize);
+                if (sCompare == sFind) {
+                    return i;
+                }
+            }
+        }
+        return -1;
+    }
+    </script>
+</body>
+
+</html>

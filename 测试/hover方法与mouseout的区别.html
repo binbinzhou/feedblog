@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 100px;
+			height: 100px;
+			background: red;
+			display: block;
+		}
+		.play{
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<button class="btn">按钮</button>
+	<div class="box">
+		
+	</div>
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script>
+		// $('.btn').hover(function(){
+		// 	$('.box').toggleClass('play');
+		// });
+		$('.btn').mouseover(function(){
+			$('.box').addClass('play');
+		});
+		$('.btn').mouseout(function(){
+			$('.box').removeClass('play');
+		});
+
+	</script>
+</body>
+</html>

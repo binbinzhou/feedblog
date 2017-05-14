@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <button class="btnone">按钮一</button>
+  <button class="btntwo">按钮二</button>
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script>
+  var Button = function() {
+    this.init();
+    this.initEventList();
+  };
+  Button.prototype = {
+    init: function() {
+
+    },
+    initEventList: function(className) {
+
+    }
+  };
+  Button.prototype.constructor = Button;
+  window.Button = Button;
+  </script>
+</body>
+
+</html>

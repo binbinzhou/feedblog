@@ -1,0 +1,1120 @@
+/*--css 初始化-- */
+a,
+address,
+b,
+big,
+blockquote,
+body,
+center,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+label,
+legend,
+li,
+ol,
+p,
+pre,
+small,
+span,
+strong,
+u,
+ul,
+var,
+button,
+input,
+textarea {
+	padding: 0;
+	margin: 0;
+}
+fieldset,
+img,
+input,
+button {
+	border: none;
+	outline-style: none;
+}
+ul, ol {
+	list-style: none;
+}
+input {
+	font-family: "Helvetica", " Microsoft YaHei";
+	font-size: 14px;
+}
+select, input {
+	vertical-align: middle;
+}
+select,
+input,
+textarea {
+	font-size: 14px;
+}
+
+/*--防止拖动--*/
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	resize: none;
+	display: block;
+}
+
+/*--去掉图片低测默认的3像素空白缝隙--*/
+img {
+	border: 0;
+	vertical-align: middle;
+}
+table {
+	border-collapse: collapse;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+	text-decoration: none;
+}
+s,
+i,
+em {
+	font-style: normal;
+	text-decoration: none;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/*--解决button在firefox下文字不能上下居中的问题--*/
+button::-moz-focus-inner {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+body {
+	font-family: "Helvetica", " Microsoft YaHei";
+	font-size: 14px;
+	color: #333;
+}
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*--定义字体--*/
+@font-face {
+	font-family: "Nunito-Bold";
+	src: url(../fonts/Nunito-Bold.ttf) format("truetype");
+}
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: url(../fonts/OpenSans-Regular.ttf) format("truetype");
+}
+a:link, a:visited {
+	color: #666;
+	text-decoration: none;
+}
+a:hover {
+	color: #428bca;
+}
+
+/*--登录注册页面开始--*/
+.logreg-wrap {
+	background-color: #f3f3f4;
+}
+.logreg-container {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.logreg-header {
+	font-family: "Nunito-Bold";
+	color: #393b3a;
+}
+.logreg-title {
+	margin: 0;
+	font-size: 45px;
+}
+.cursor {
+	cursor: pointer;
+}
+.logreg-title span {
+	color: #507e96;
+}
+.logreg-header p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.logreg-con {
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background: #fff;
+}
+.logresmodal {
+	top: 130px;
+}
+.logreg-con .modal-dialog {
+	width: 315px;
+}
+.logresmodal .modal-header {
+	padding: 20px 15px;
+}
+.logresmodal .modal-header .close {
+	margin-top: -8px;
+}
+.logresmodal .modal-body {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.login-wrap, .register-wrap, .forgot-wrap, .update-wrap {
+	padding: 50px 20px;
+}
+.logreg-splitline {
+	position: absolute;
+	top: 45px;
+	left: 50%;
+	height: 80%;
+	border-left: 1px solid #eee;
+}
+.text-muted {
+	margin-bottom: 30px;
+	font-size: 17px;
+	font-weight: 600;
+	color: #393b3a;
+}
+.control-label {
+	margin-bottom: 5px;
+	font-weight: 800;
+}
+.remove, .ok, .blank, .hasregis {
+	display: none;
+	padding-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.glyphicon-remove-sign {
+	color: #dd450c;
+}
+.glyphicon-ok-sign {
+	color: #4c9ed9;
+}
+a.for-password {
+	color: #428bca;
+}
+.for-password:hover {
+	color: #666;
+}
+.login-btn {
+	padding-right: 23px;
+	padding-left: 23px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+}
+
+/*--登录注册页面结束--*/
+
+/*--找回密码开始--*/
+.forgot-btn, .update-btn {
+	margin-top: 25px;
+}
+
+/*--找回密码结束--*/
+
+/*--登陆注册底部版权信息--*/
+.copyright {
+	font-family: "Nunito-Bold";
+	font-size: 13px;
+}
+.form-control {
+	height: 34px;
+}
+
+/*--首页头部样式--*/
+.user-wrap {
+	min-width: 1100px;
+}
+.main-header {
+	line-height: 60px;
+}
+.main-header .to-index {
+	margin-right: 30px;
+	font-family: "Nunito-Bold";
+	font-size: 30px;
+}
+.main-header .to-index span {
+	color: #507e96;
+}
+.to-index:link {
+	color: inherit;
+	text-decoration: none;
+}
+.to-index:hover {
+	color: inherit;
+}
+.menu li {
+	padding: 0;
+	margin: 0 0 0 5px;
+	line-height: 30px;
+	color: #666;
+	vertical-align: middle;
+}
+.menu li a {
+	display: block;
+	height: 30px;
+	padding: 0 13px;
+	border-radius: 2px;
+	font-size: 16px;
+	color: #666;
+	text-decoration: none;
+}
+.menu li a:hover {
+	background-color: #f3f3f3;
+}
+.nav-m {
+	background-color: #7caac2;
+}
+.nav-m .nav-list {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+.nav-list .nav-item {
+	padding: 0;
+}
+.nav-item .glyphicon-home {
+	width: 20px;
+}
+.nav-item a {
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	white-space: nowrap;
+}
+.nav-item a:hover {
+	background: #5d8ba3;
+}
+.search-form {
+	position: relative;
+	display: inline-block;
+	width: 245px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.search-form .btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #999;
+	box-shadow: none;
+}
+.search-form .form-control {
+	height: 34px;
+	padding-right: 35px;
+}
+.search-form .form-control:focus {
+	box-shadow: none;
+}
+
+/*--游客进入网站访问--*/
+.loginregister {
+	position: relative;
+	top: auto;
+	right: -60px;
+	display: none;
+	height: 30px;
+	padding: 7px 13px;
+	border-radius: 2px;
+	line-height: 30px;
+	color: #666;
+	color: #fff;
+	vertical-align: middle;
+	background-color: #7caac2;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+.loginregister:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*--登陆之后用户资料显示--*/
+.options {
+	display: none;
+	margin: 0;
+}
+.options li {
+	padding: 0;
+	line-height: 29px;
+	color: #666;
+	vertical-align: middle;
+}
+.options li a:link, .options li a:hover, .options li a:visited {
+	color: #666;
+	text-decoration: none;
+}
+.user-desc {
+	display: block;
+}
+.user-pic {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	vertical-align: middle;  /*background: url("../img/Leslie-01.png") no-repeat center;*/
+}
+.user-name {
+	display: inline-block;
+	margin-left: 5px;
+	line-height: 17px;
+	vertical-align: middle;
+}
+
+/*文字过多用...表示*/
+.user-name span {
+	display: inline-block;
+	overflow: hidden;
+	width: 65px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.fun-opts {
+	display: inline-block;
+	height: 30px;
+	padding: 0 10px;
+	border-radius: 3px;
+}
+.fun-opts:hover {
+	background-color: #f3f3f3;
+}
+.opts-user ul a, .function ul a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.opts-user .glyphicon, .function ul .glyphicon {
+	margin-right: 10px;
+}
+
+/*--个人资料--*/
+
+/*--右边部分头像--*/
+.profile {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #f6f6f6;
+}
+
+/*.profile-img {
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+}*/
+.profile-img .headscu {
+	display: block;
+}
+.headscu img {
+	width: 160px;
+	height: 160px;
+}
+
+/*.profile-img .headsc-uploader {
+	position: absolute;
+	bottom: 0;
+	width: 165px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	background: rgba(0, 0, 0, .75);
+}*/
+
+/*--中间部分主要资料--*/
+.profile-name {
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 1.2;
+}
+.profile-name .ml15 {
+	margin-left: 15px;
+	font-size: 14px;
+}
+.profile-badges {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+.profile-rank {
+	display: inline-block;
+	padding: 7px 12px;
+	border: 1px solid #5cb85c;
+	border-radius: 100px;
+	font-size: 16px;
+	line-height: 1;
+	color: #43894e;
+	vertical-align: middle;
+	background: #dff0d8;
+}
+.badges-awards {
+	display: inline-block;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+.badges-awards .glyphicon {
+	font-size: 18px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.badges-awards .yellow {
+	color: #ffda23;
+}
+.badges-awards .gary {
+	color: #c5c5c5;
+}
+.badges-awards .pink {
+	color: #cd9a62;
+}
+.badges-count {
+	margin-right: 12px;
+	margin-left: 5px;
+}
+.profile-info .glyphicon {
+	margin-right: 5px;
+	font-size: 16px;
+	color: #ccc;
+	vertical-align: middle;
+}
+.profile-info .info-item {
+	display: block;
+	margin-bottom: 12px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #666;
+	vertical-align: middle;
+}
+
+/*--右边部分座右铭编辑部分--*/
+.profile-heading {
+	width: 100%;
+	height: 32px;
+	padding: 0 12px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	line-height: 32px;
+	background-color: #e3e3e3;
+}
+.iconlist {
+	display: inline-block;
+	font-size: 0;
+}
+.iconlist li {
+	width: 12px;
+	height: 12px;
+	margin-right: 8px;
+	border-radius: 50%;
+}
+.iconlist .red {
+	background-color: #ff5f57;
+}
+.iconlist .yellow {
+	background-color: #ffbd2e;
+}
+.iconlist .green {
+	background-color: #28ca42;
+}
+.editor {
+	height: 32px;
+	font-size: 12px;
+}
+.edit {
+	padding: 4px 8px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.edit:hover {
+	background-color: #fcf8e3;
+}
+.profile-content {
+	overflow: hidden;
+	width: 100%;
+	height: 195px;
+	padding: 20px;
+	font-size: 13px;
+	color: #666;
+	background-color: #eee;
+}
+.profile-content p {
+	overflow: hidden;
+	max-height: 150px;
+}
+.profile-content .con-form {
+	display: none;
+}
+.controls {
+	margin-top: 10px;
+}
+
+/*--个人资料页功能2016.12.26--*/
+
+/*--左侧功能栏--*/
+.profile-fun {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.fun-head {
+	text-align: center;
+}
+.fun-head >div:first-child {
+	border-right: 1px solid #eee;
+}
+.fun-head span {
+	display: inline-block;
+	color: #999;
+}
+.fun-head .attention, .fun-head .fans {
+	display: block;
+	margin: 0;
+	font-size: 16px;
+	color: #333;
+}
+.fun-nav {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-top: 1px solid #ddd;
+	background-color: #fff;
+}
+.fun-nav >li {
+	height: 34px;
+	line-height: 34px;
+	cursor: pointer;
+}
+.fun-nav li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0 10px 0 0;
+	margin-right: 5px;
+	color: #666;
+	text-indent: 10px;
+}
+.fun-nav li:hover a {
+	color: #428bca;
+	background: #f0f5f3;
+}
+
+/*--中间部分--*/
+
+/*--面板中的echart饼状图、柱状图--*/
+.echart-wrap {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.pieEchart {
+	width: 100%;
+	height: 150px;
+}
+.barEchart {
+	width: 100%;
+	height: 180px;
+}
+.inline {
+	display: inline-block;
+}
+.profile-mine li {
+	padding: 10px 0;
+	margin-top: 0;
+	border-bottom: 1px solid #eee;
+	line-height: 20px;
+}
+.profile-mine li .con-type {
+	display: inline-block;
+	width: 55px;
+	padding: 0;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 26px;
+	text-align: center;
+}
+.con-write-wrap {
+	overflow: hidden;
+	padding-left: 10px !important;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.con-write {
+	font-size: 14px;
+	line-height: 26px;
+}
+.con-more {
+	padding-top: 10px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: #999;
+}
+.more {
+	line-height: 20px;
+	color: #009a61;
+	text-decoration: none;
+}
+
+/*--右边功能部分--*/
+.profile-skill {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #eee;
+}
+.profile-skill h4 {
+	margin: 0 0 20px;
+	font-size: 16px;
+}
+.profile-skill h4 span {
+	color: #009a61;
+}
+.skill-badges .btn {
+	margin-bottom: 8px;
+}
+.skill-badges .glyphicon {
+	font-size: 10px;
+}
+
+/*--显示二维码及回到顶部盒模型开始--*/
+.qrcode {
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+	cursor: pointer;
+	background: #fff;
+}
+.qrcode p {
+	width: 36px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-bottom: none;
+}
+.code {
+	display: inline-block;
+	padding: 7px 10px;
+	border: 1px solid #ddd;
+}
+.qrcode p:hover, .code:hover {
+	background-color: #eee;
+}
+.qrcode-img {
+	position: absolute;
+	right: 45px;
+	bottom: 0;
+	display: none;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	background: #fff;
+}
+
+/*--公共的底部信息开始--*/
+.footer {
+	padding: 40px 0;
+	border-top: 1px solid #eee;
+	line-height: 1.6;
+	color: #888;
+	vertical-align: top;
+}
+.footer .site-link {
+	margin: 0 0 40px;
+}
+.footer .site-link dt {
+	margin-bottom: 20px;
+	color: #333;
+}
+.footer .site-link dd {
+	margin: 5px 0;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+/*--公共的底部信息结束--*/
+
+/*--个人资料页样式开始2017.01.03--*/
+.self-job .glyphicon, .self-info .glyphicon {
+	margin-left: 5px;
+	font-size: 12px;
+	color: #ccc;
+}
+.self-info .panel-body {
+	padding: 0;
+}
+.self-info .panel-body >div, .self-info .panel-body >form {
+	padding: 15px;
+}
+.personal-info-edit, .personal-work-edit,.protect-password-edit {
+	display: none;
+	background: rgb(239, 242, 239);
+}
+.mr10 {
+	margin-right: 10px;
+}
+.want-job {
+	padding: 0;
+}
+.want-job >form, .want-job >div {
+	padding: 15px;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+.mb10 img {
+	width: 130px;
+	height: 130px;
+}
+.ml160 {
+	padding-top: 30px;
+	margin-left: 160px;
+}
+.required::after {
+	content: " *";
+	color: #ed1c24;
+}
+.checkbox-inline {
+	padding-left: 0;
+	margin-right: 18px;
+}
+.checkbox-inline input {
+	margin-right: 8px;
+}
+.info-item {
+	margin-bottom: 10px;
+}
+.info-item img {
+	width: 128px;
+	height: 128px;
+	margin-top: 5px;
+	border-radius: 3px;
+}
+.info-key {
+	margin-bottom: 3px;
+	color: #999;
+}
+.atten-fans li {
+	padding: 12px 0;
+	border-bottom: 1px solid #eee;
+}
+.atten-fans img {
+	width: 35px;
+	height: 35px;
+	margin: 6px 10px 0 10px;
+}
+.atten-fans li p {
+	margin-top: 2px;
+	font-size: 13px;
+	color: #999;
+}
+.atten-fans li button {
+	margin-top: 8px;
+}
+
+/*--个人资料页样式结束--*/
+
+/*--我的收藏页面样式开始--*/
+.write-title {
+	padding-bottom: 15px;
+	margin: 0;
+	border-bottom: 1px solid #eee;
+	font-size: 18px;
+}
+.write-content li {
+	padding: 10px;
+	margin-top: 0;
+	border-bottom: 1px solid #eee;
+}
+.write-content a {
+	font-size: 14px;
+	line-height: 26px;
+}
+
+/*--我的收藏页面样式结束--*/
+
+/*--重置左侧垂直菜单样式--*/
+.nav-pills >li.active >a {
+	color: #428bca !important;
+	background: #f0f5f3 !important;
+}
+
+/*--博客首页样式2017.01.12--*/
+.index-wrap {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.index-tabs >ul {
+	margin-bottom: 10px;
+	margin-left: 0;
+	border-bottom: 1px solid #ddd;
+}
+.index-tabs >ul li {
+	padding: 0;
+	margin-right: 30px;
+}
+.index-tabs >ul li a {
+	display: block;
+	min-width: 110px;
+	padding-top: 0;
+	padding-bottom: 10px;
+	border: none;
+	border-bottom: 3px solid transparent;
+	font-size: 14px;
+	font-weight: 700;
+	color: rgb(102, 102, 102);
+	text-align: center;
+}
+.index-tabs >ul li a.current {
+	border-bottom-color: #7caac2;
+}
+.index-tabs >ul li a:hover {
+	border-bottom-color: #7caac2;
+}
+.stream {
+	display: none;
+}
+.stream.s-current {
+	display: block;
+}
+.stream-list li {
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+}
+.stream-list .media {
+	margin-top: 0;
+}
+.stream-list .media-heading {
+	margin-bottom: 0;
+}
+.str-user {
+	font-size: 13px;
+	color: #999;
+}
+.str-user:hover {
+	color: #999;
+	text-decoration: underline;
+}
+.str-main {
+	display: inline-block;
+	overflow: hidden;
+	max-width: 730px;
+	font-size: 15px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.str-main:hover {
+	text-decoration: underline;
+}
+.str-comment {
+	display: inline-block;
+	margin-top: 18px;
+}
+
+/*--首页南丁格尔玫瑰图--*/
+.pieMEchart {
+	width: 100%;
+	height: 285px;
+}
+
+/*--首页右侧部分内容--*/
+.widget {
+	margin-bottom: 25px;
+	border: 3px solid #f0f5f3;
+}
+.widget-title {
+	font-size: 16px;
+	line-height: 31px;
+	color: #619dbe;
+	background: #f0f5f3;
+}
+.widget-con {
+	padding: 18px;
+}
+.widget-con li {
+	margin-bottom: 8px;
+}
+.widget-con p {
+	color: #999;
+}
+.widget-con p .w-zan {
+	margin-right: 5px;
+	color: #619dbe;
+}
+.widget-con p .w-pinglun {
+	margin-left: 5px;
+}
+.textindent2 {
+	overflow: auto;
+	max-height: 240px;
+	text-indent: 2em;
+}
+.nopadding {
+	padding: 0;
+}
+.print-modal, .printout-modal {
+	top: 10px;
+	width: 780px;
+}
+.print-modal .modal-body, .printout-modal .modal-body {
+	height: auto;
+	min-height: 420px;
+	background: #f3f3f3;
+}
+.modal-header .close {
+	margin-top: -5px;
+	font-size: 30px;
+}
+.change-pic .item {
+	height: 295px;
+}
+.change-pic >.item >a >img {
+	height: 295px;
+}
+.str-friend {
+	margin: 0;
+	background: rgb(243, 243, 243);
+}
+.str-friend >div {
+	padding: 0;
+}
+.str-friend >div.stream-activity {
+	padding: 30px 30px 10px 30px;
+}
+.str-line {
+	margin-bottom: 25px;
+}
+.str-line label {
+	font-size: 14px;
+	font-weight: 200;
+	color: gray;
+}
+.stream-cards{
+	    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 20px;
+}
+.widget-event{
+	    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    background: #f3f3f3;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.widget-event img{
+	width: 260px;
+}
+.widget-event-desc{
+	padding: 20px 10px 10px 10px;
+}
+.widget-event-desc li{
+	margin-bottom: 9px;
+}
+/*展示用户信息的模态框*/
+.userinfo-modal {
+	top: 10px;
+	width: 800px;
+}
+.userinfo-modal .modal-body{
+	padding: 10px;
+}
+.userinfo-modal .modal-body {
+	height: auto;
+	min-height: 420px;
+	background: #f3f3f3;
+}
+.userinfo-modal .modal-title {
+	margin-left: 20px;
+}
+.userinfo-modal .profile {
+	padding: 0;
+	margin-bottom: 15px;
+	background: transparent;
+}
+.userinfo-modal .profile-img {
+	text-align: center;
+}
+.userinfo-modal .profile-rank {
+	font-size: 10px;
+}
+.userinfo-modal .profile-badges {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.userinfo-modal .profile-name {
+	font-size: 26px;
+}
+.userinfo-modal .info-item {
+	margin-bottom: 11px;
+	font-size: 12px;
+	line-height: 16px;
+}
+.userinfo-modal .profile-content {
+	height: 155px;
+}
+.userinfo-modal .panel{
+	margin-right: 5px;
+	margin-left: 10px;
+}
+.userinfo-modal .con-write{
+	font-size: 12px;
+}
+.userinfo-modal .panel-title{
+	font-size: 14px;
+}
+.attention-opt {
+	width: 180px;
+	margin-bottom: 5px;
+}
+.attention-opt .btn {
+	width: 40%;
+	margin-left: 16px;
+}
+.media-middle img{
+	width: 50px;
+	height: 50px;
+}
+.userinfo-modal .panel-body{
+	max-height: 225px;
+  overflow: auto;
+}
+.modal-body{
+	border-radius: 5px;
+}
+.protect-password{
+	padding: 0;
+}
+.protect-password>form,.protect-password>div{
+	padding:15px;
+}
+.protect-password .form-group{
+	margin-bottom: 7px;
+}
